@@ -14,6 +14,15 @@ button{
     font-size: 30px;
 }
 
+.first-row {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    background-color:aliceblue;
+}
+
 .number {
     border: 2px solid black;
     border-radius: 10px;
@@ -37,4 +46,24 @@ button{
 .clear {
     border: 2px solid purple;
     border-radius: 10px;
+}
+
+.screen {
+    width: 225px;
+    margin: 5px;
+    border: 2px solid black;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.previous {
+    font-size: 25px;
+}
+
+.current {
+    font-size: 30px;
+    font-weight: 700;
 }
