@@ -57,6 +57,10 @@ operators.forEach((op)=>op.addEventListener("click", function (e){
 
 }))
 
+decimal.addEventListener("click", function (){
+    addDecimal();
+})
+
 clear.addEventListener("click", function (){
     previousValue='';
     currentValue='';
@@ -100,4 +104,10 @@ function handleOperator(op) {
 
 function roundNumber (n){
     return Math.round(n*1000)/1000;
+}
+
+function addDecimal(){
+    if (!currentValue.includes(".")) {
+        currentValue+=".";
+    }
 }
